@@ -18,3 +18,7 @@ C:\Users\paurav\Desktop\Simple_AF_PI_Connect_App\WindowsFormsApplication1\Window
 C:\Users\paurav\Desktop\Simple_AF_PI_Connect_App\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\paurav\Desktop\Simple_AF_PI_Connect_App\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
 C:\Users\paurav\Desktop\Simple_AF_PI_Connect_App\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\paurav\Desktop\Simple_AF_PI_Connect_App\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Interop.PISDK.dll
+C:\Users\paurav\Desktop\Simple_AF_PI_Connect_App\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Interop.PISDKCommon.dll
+C:\Users\paurav\Desktop\Simple_AF_PI_Connect_App\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\Interop.PITimeServer.dll
+C:\Users\paurav\Desktop\Simple_AF_PI_Connect_App\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.ResolveComReference.cache

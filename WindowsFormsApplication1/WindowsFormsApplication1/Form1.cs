@@ -63,10 +63,10 @@ namespace WindowsFormsApplication1
             }
             catch (Exception ex)
             {
-                MessageBox.Show("PI Tag Error : "+ex.Message);
+                MessageBox.Show("PI Tag Error : " + ex.Message);
             }
 
-            if (myTag !=null)
+            if (myTag != null)
             {
                 myTagValue = myTag.Snapshot(); // Find Current Value
                 txtTagValue.Text = myTagValue.ToString();
@@ -107,7 +107,22 @@ namespace WindowsFormsApplication1
                 // Connect to AF Attribute
                 //myAttribute = AFAttribute.FindAttribute("\\\\ECGPISERVER\\Portal_DB\\Garima\\Generation\\Wind|Asset Availability", myAFDB);
                 myAttribute = AFAttribute.FindAttribute(txtAttribute.Text, myAFDB);
-                txtAttributeValue.Text = myAttribute.PIPoint.ToString();                                
+                txtAttributeValue.Text = myAttribute.PIPoint.ToString();
+                
+                // Load PI Point Attributes: pass null to load all attributes of PI Point
+                myAttribute.PIPoint.LoadAttributes("engunits");
+                object drAttrValue; // store neg. units output
+                drAttrValue = myAttribute.PIPoint.GetAttribute("engunits"); // Get UoM of PI Point
+                txtAttributeValue.Text += " UoM:"+drAttrValue.ToString();
+
+
+                // Learning Efforts
+                //IEnumerable<string> list = myAttribute.PIPoint.FindAttributeNames(null);
+                //foreach (string item in list) {
+                //    drAttrValue = myAttribute.PIPoint.GetAttribute(item);
+                //    Console.WriteLine("  {0} = '{1}'", item, drAttrValue);
+                //}
+
             }
             catch (Exception ex)
             {
